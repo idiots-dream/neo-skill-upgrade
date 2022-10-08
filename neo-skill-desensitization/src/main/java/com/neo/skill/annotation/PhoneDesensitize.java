@@ -8,7 +8,7 @@ import java.lang.annotation.*;
 /**
  * @author blue-light
  * Date 2022-09-27
- * Description 电话脱敏注解
+ * Description 手机号脱敏注解
  */
 @Documented
 @JacksonAnnotationsInside

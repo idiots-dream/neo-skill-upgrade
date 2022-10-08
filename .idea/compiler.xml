@@ -7,6 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="neo-skill-chat" />
+        <module name="neo-skill-cache-queue" />
+        <module name="neo-skill-websocket" />
         <module name="neo-skill-desensitization" />
       </profile>
     </annotationProcessing>

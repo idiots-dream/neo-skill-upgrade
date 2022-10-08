@@ -11,7 +11,7 @@ import java.lang.annotation.*;
  * @author blue-light
  * Date 2022-09-27
  * Description 脱敏实现策略
- * -@JsonSerialize注解：表示使用自定义序列化模式
+ * - @JsonSerialize注解：表示使用自定义序列化模式
  */
 @Documented
 @JacksonAnnotationsInside

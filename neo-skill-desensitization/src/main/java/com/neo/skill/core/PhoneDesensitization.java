@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  * Date 2022-09-27
  * Description 手机号脱敏器 默认只保留前3位和后4位
  */
-public class PhoneDesensitization implements StringDesensitization {
+public class PhoneDesensitization implements Desensitization<String> {
 
     /**
      * 手机号正则
@@ -30,6 +30,7 @@ public class PhoneDesensitization implements StringDesensitization {
         Matcher matcher = DEFAULT_PATTERN.matcher(target);
         while (matcher.find()) {
             String group = matcher.group();
+            // 替换
             target = target.replace(group, group.substring(0, 3) + Symbol.getSymbol(4, Symbol.STAR) + group.substring(7, 11));
         }
         return target;
